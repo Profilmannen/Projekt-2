@@ -40,9 +40,44 @@ header h1{
     background-color: rgba(0, 0, 0, 0.719);
     color: white;
     padding: 20px;
-    width: 200px;
+    width: 300px;
     font-size: 18px;
+    margin-top: 15px;
     border: none;
     cursor: pointer;
-
 }
+
+.knapp:hover{
+    background-color:rgba(0, 0, 0, 0.808);
+}
+
+.kategorier3{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.719);
+    width: 300px;
+    height: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.kategorier4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+}
+
+.kategorier4 a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.kategorier3 a:hover{
+    background-color: rgba(0, 0, 0, 0.808);
+}
+
+
+.show {display:block;}
