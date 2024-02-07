@@ -2,7 +2,6 @@ body{
     background-image: url(./img/13433552-stockholms-stadsbibliotek-scaled.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 
@@ -22,6 +21,8 @@ header h1{
     text-align: center;
     height: 80px;
 }
+
+
 
 .kategorier{
     background-color: #8A6240;
@@ -73,9 +74,11 @@ header h1{
 }
 
 .kategorier4 a{
+    display: block;
     color: white;
     text-decoration: none;
     font-size: 20px;
+
     
 }
 
@@ -94,10 +97,10 @@ header h1{
     align-items: center;
     justify-content: space-around;
     
-    
 }
 
 
+.show{display: block;}
 
 
 
@@ -106,4 +109,5 @@ header h1{
 
 
 
-.show {display:block;}
+
+
