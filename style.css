@@ -42,83 +42,73 @@ header h1{
 
 
 
-.kategorier{
+.länkar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     background-color: #8A6240;
+    height: 30px;   
+}
+
+.länkar a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    height: 30px;
-    
-}
-
-.kategorier a{
+    justify-content: center;
     text-decoration: none;
     color: antiquewhite;
     font-size: 20px;
+    height: 30px;
 }
 
-.knapp{
-    background-color: rgba(0, 0, 0, 0.719);
-    color: white;
-    padding: 20px;
-    width: 400px;
-    font-size: 18px;
-    margin-top: 15px;
-    border: none;
-    cursor: pointer;
+.Populärt{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
-.knapp:hover{
-    background-color:rgba(0, 0, 0, 0.808);
+.Klassiker{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
-.kategorier3{
-    display: none;
-    background-color: rgba(0, 0, 0, 0.719);
-    width: 400px;
-    height: 450px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+.Barn{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
-.kategorier3 a:hover{
-    background-color: white;
-    color: black;
-}
-
-.kategorier4{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 450px;
-}
-
-.kategorier4 a{
-    display: block;
-    color: white;
+.knapp2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #8A6240;
     text-decoration: none;
-    font-size: 20px;
+    border: none;
+    color: antiquewhite;
+}
 
+
+
+.ämnen{
+    display: none;
+    background-color:rgba(0, 0, 0, 0.719);
     
 }
 
-.vänster {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    
-    
-}
 
-.höger {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    
-}
+
+
+
+
+
+
+
 
 
 .show{display: block;}

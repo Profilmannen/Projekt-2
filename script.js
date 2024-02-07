@@ -1,10 +1,12 @@
+
+
 function myFunction(){
-    document.getElementById("kategorier2").classList.toggle("show");
+    document.getElementById("kategorier").classList.toggle("show");
 }
 
 window.onclick = function(event){
-    if (!event.target.matches('.knapp')){
-        var dropdowns = document.getElementsByClassName("kategorier3");
+    if (!event.target.matches('.knapp2')){
+        var dropdowns = document.getElementsByClassName("ämnen");
         var i;
         for (i = 0; i < dropdowns.length; i++){
             var openDropdown = dropdowns[i];
