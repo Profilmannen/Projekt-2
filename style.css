@@ -35,3 +35,7 @@ header h1{
     text-decoration: none;
     color: antiquewhite;
 }
+
+nav{
+    background-color: black;
+}
