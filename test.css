@@ -1,69 +1,47 @@
-header{
+body{
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.rubrik{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    background-color: #4D2D18;
-    color: antiquewhite;
+.Meny{
+    background-color: aqua;
     text-align: center;
-}
-
-.kategorier{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #8A6240;
-    height: 40px;
-    
-}
-
-.kategorier a{
-    text-decoration: none;
-    color: antiquewhite;
-    
 }
 
 .knapp{
+    background-color: aqua;
     border: none;
-    color: antiquewhite;
-    background-color: #8A6240;
-    height: 40px;
-    width: 500px;
-    text-align: center;
-   
+}
 
+.test1{
+    background-color: aqua;
+    text-align: center;
+    height: 40px;
+}
+
+.test2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    height: 40px;
+}
+
+.test3{
+    background-color: aqua;
+    text-align: center;
+    height: 40px;
 }
 
 .ämnen{
     display: none;
-    width: 400px;
-    width: 500px;
-    background-color: #8A6240;
+    background-color: black;
+    color: aliceblue;
 }
 
 .ämnen a{
     display: block;
-}
-
-.innehåll{
-    display: flex;
-    flex-direction: row;
-    width: 500px;
-}
-
-.vänster{
-    display: flex;
-    flex-direction: column;
-}
-
-.höger{
-    display: flex;
-    flex-direction: column;
 }
 
 .show{display: block;}
