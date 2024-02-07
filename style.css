@@ -1,5 +1,5 @@
 body{
-    background-image: url(./img/719109002.jpg);
+    background-image: url(./img/13433552-stockholms-stadsbibliotek-scaled.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -36,6 +36,13 @@ header h1{
     color: antiquewhite;
 }
 
-nav{
-    background-color: black;
+.knapp{
+    background-color: rgba(0, 0, 0, 0.719);
+    color: white;
+    padding: 20px;
+    width: 200px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+
 }
