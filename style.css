@@ -4,14 +4,6 @@ body{
     background-size: cover;
 }
 
-
-
-header h1{
-    margin: 0px;
-    color: antiquewhite;
-}
-
-
 .rubrik{
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
@@ -26,6 +18,8 @@ header h1{
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    margin: 0px;
+    color: antiquewhite;
 }
 
 .rubrik input{
@@ -40,25 +34,21 @@ header h1{
     
 }
 
-
-
 .länkar{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     background-color: #8A6240;
-    height: 30px;   
+    height: 35px;   
 }
 
 .länkar a{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
     color: antiquewhite;
+    text-decoration: none;
+    font-family: 'Lora', serif;
     font-size: 20px;
-    height: 30px;
+    text-align: center;
+
 }
 
 .Populärt{
@@ -66,6 +56,8 @@ header h1{
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    margin: 5px;
+   
 }
 
 .Klassiker{
@@ -73,6 +65,9 @@ header h1{
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
+    color: antiquewhite;
+    margin: 5px;
+    
 }
 
 .Barn{
@@ -80,6 +75,8 @@ header h1{
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
+    margin: 5px;
+   
 }
 
 .knapp2{
@@ -87,31 +84,64 @@ header h1{
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+    max-width: 306px;
     background-color: #8A6240;
     text-decoration: none;
+    font-family: 'Lora', serif;
+    font-size: 20px;
     border: none;
     color: antiquewhite;
+    cursor: pointer;
+}
+
+.lista{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 450px;
+}
+
+.lista a{
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.lista a:hover{
+    background-color:rgba(255, 255, 255, 0.726);
+    color: black;
 }
 
 
+
+.vänster{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 450px;
+}
+
+.höger{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    justify-content: space-evenly;
+}
 
 .ämnen{
     display: none;
     background-color:rgba(0, 0, 0, 0.719);
-    
+    width: 400px;
+    height: 450px;
+  
+  
 }
 
-
-
-
-
-
-
-
-
-
-
-.show{display: block;}
+.show{display: flex;}
 
 
 
