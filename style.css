@@ -71,14 +71,22 @@ body{
     
 }
 
-.Barn{
+.knapp1{
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
-    margin: 5px;
-   
+    max-width: 306px;
+    background-color: #8A6240;
+    text-decoration: none;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    border: none;
+    color: antiquewhite;
+    cursor: pointer;
 }
+
+
 
 .knapp2{
     grid-column-start: 1;
@@ -94,6 +102,29 @@ body{
     color: antiquewhite;
     cursor: pointer;
 }
+
+.varukorg{
+    display: block;
+    position: absolute;
+    float: right;
+    background-color:antiquewhite;
+    height: 450px;
+    width: 400px;
+}
+
+.cart-text{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.varukorg img{
+    width: 80px;
+    height: auto;
+}
+
+
+
 
 .lista{
     display: flex;
@@ -144,6 +175,10 @@ body{
 
 .show{display: flex;}
 
+
+
+
+
 .Artiklar-övre{
     display: flex;
     flex-direction: row;
@@ -180,7 +215,7 @@ body{
     height: 350px;
     margin-top: 15px;
     
- }
+}
 
 
 
