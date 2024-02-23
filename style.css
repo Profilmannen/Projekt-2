@@ -97,6 +97,7 @@ body{
 
 .lista{
     display: flex;
+    position: absolute;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
@@ -135,6 +136,7 @@ body{
 
 .ämnen{
     display: none;
+    position: absolute;
     background-color:rgba(0, 0, 0, 0.719);
     width: 400px;
     height: 450px;
@@ -142,14 +144,14 @@ body{
 
 .show{display: flex;}
 
-main{
+.Artiklar-övre{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
 
-main div{
+.Artiklar-övre div{
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -161,18 +163,30 @@ main div{
    
 }
 
+.Artiklar-nedre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Artiklar-nedre div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.719);
+    color: white;
+    width: 300px;
+    height: 350px;
+    margin-top: 15px;
+    
+ }
+
+
 
 main img{
     max-width: 200px;
     height: 270px;
-    
-    
 }
-
-
-
-
-
-
 
 
