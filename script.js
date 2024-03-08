@@ -1,6 +1,5 @@
-
 function myFunction(){
-    document.getElementById("kategorier").classList.toggles("show");
+    document.getElementById("kategorier").classList.toggle("show");
 }
 
 window.addEventListener('click', function(event){
@@ -15,7 +14,9 @@ window.addEventListener('click', function(event){
         }
 
     }
+
 })
+
 
 function cartFunction(){
     document.getElementById("cart").classList.toggle("show");
@@ -36,38 +37,61 @@ window.addEventListener('click', function(event){
 
 })
 
-const ul = document.querySelector("#cart-items");
+var products = [
+    { name: 'Fellowship of the ring', price: 100 },
+    { name: 'Hunger games', price: 100 },
+    { name: 'Harry Potter 1', price: 100 },
+    { name: 'Silmarillion', price: 100 },
+    { name: 'IT', price: 100 },
+    { name: 'The Maze Runner', price: 100 },
+];
 
-function add_to_cart(namn, pris){
-    console.log("namn: " + namn + "\npris: " + pris)
-    let li = document.createElement("li");
-    li.textContent= namn + " Pris: " + pris + "kr";
-    let removeBtn = document.createElement("#knapp3");   
-    removeBtn.textContent = "Ta bort";
-    removeBtn.addEventListener("click", function(){
-        remove_from_cart(li);
+var cart = [];
 
-    });
-    li.appendChild(removeBtn);
-    ul.appendChild(li);
-    count++;
+function add_to_cart(productName, productPrice){
+    var existingProduct = cart.find(item => item.name === productName);
 
-    let fält=[];
-    let json = window.localStorage.getItem("product");
-    if (json){
-        fält = JSON.parse(json)
+    if (existingProduct){
+        existingProduct.quantity += 1;
+    } 
+
+    else{
+        var product = { name: productName, price: productPrice, quantity: 1 };
+        cart.push(product);
+
     }
 
-    let obj = {
-        namn: namn,
-        pris: pris,
-    }
-    fält.push(obj);
-    json = JSON.stringify(fält);
-    window.localStorage.setItem("product",json);
+    updateCart();
 }
 
+function updateCart(){
+    var cartItemsList = document.getElementById('cart-items');
+    var totalElement = document.getElementById('total');
+    var total = 0;
 
+    cartItemsList.innerHTML = '';
+    cart.forEach(function (item){
+        var listItem = document.createElement('li');
+        listItem.textContent = `${item.name} - ${item.quantity} st - ${item.price * item.quantity} kr`;
+        cartItemsList.appendChild(listItem);
 
-  
-    
+        total += item.price * item.quantity;
+    });
+
+    totalElement.textContent = 'Totalt: ' + total + ' kr';
+}
+
+function checkout(){
+    alert('Tack för ditt köp! Totalt belopp: ' + calculateTotal() + ' kr');
+    cart = [];
+    updateCart();
+}
+
+function calculateTotal(){
+    var total = 0;
+    cart.forEach(function (item){
+        total += item.price * item.quantity;
+    });
+
+    return total;
+}

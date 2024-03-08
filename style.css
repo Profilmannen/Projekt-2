@@ -104,7 +104,7 @@ body{
 }
 
 .varukorg{
-    display: none;
+    display: block;
     position: absolute;
     float: right;
     background-color:antiquewhite;

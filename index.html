@@ -33,9 +33,9 @@
                 <h2>Varukorg</h2>
             </div>
 
-            <ul id="cart-items">
-
-            </ul> 
+            <ul id="cart-items"></ul> 
+            <p id="total">Totalt: 0 kr</p>
+            <button onclick="checkout()">Gå till kassan</button>
 
         </div>
 
@@ -83,12 +83,12 @@
 
     </header>
 
-    <main>
+    <main id="products">
         <div class="Artiklar-övre">
             <article class="Lotr1">
                 <img src="./img/the-fellowship-of-the-ring-the-lord-of-the-rings-book-1-1.webp" alt="Lotr1">
                 <h3>Fellowship of the ring, (Tolkien, J.r.r.)</h3>
-                <button class="knapp3" onclick="add_to_cart('Fellowship of the ring, 100')">Lägg till i varukorg</button>
+                <button class="knapp3" onclick="add_to_cart('Fellowship of the ring', 100)">Lägg till i varukorg</button>
             </article>
     
             <article class="HungerGames1">
@@ -97,7 +97,7 @@
                 <button class="knapp3" onclick="add_to_cart('Hunger games', 100)">Lägg till i varukorg</button>
             </article>
     
-            <article class="HarryPotter1">
+            <article class="HarryPotter1" id="product">
                 <img src="./img/81Vuk+qsXRL._AC_UF1000,1000_QL80_.webp" alt="HarryPotter1">
                 <h3>Harry Potter and the Philosopher's Stone, (Rownlink, J.K.)</h3>
                 <button id="knapp3" onclick="add_to_cart('Harry Potter 1', 100)">Lägg till i varukorg</button>
@@ -115,13 +115,13 @@
             <article class="IT">
                 <img src="./img/71KWpItR2kL._AC_UF1000,1000_QL80_.webp" alt="IT">
                 <h3>It, (King, Stephen)</h3>
-                <button id="knapp3" onclick="add_to_cart('IT, 100')">Lägg till i varukorg</button>
+                <button id="knapp3" onclick="add_to_cart('IT', 100)">Lägg till i varukorg</button>
             </article>
 
             <article class="MazeRunner">
                 <img src="./img/71Ni5kp5iHL._SL1200_.webp" alt="MazeRunner">
                 <h3>The Maze Runner, (Dashner, James)</h3>
-                <button class="knapp3" onclick="add_to_cart('The Maze Runner, 100')">Lägg till i varukorg</button>
+                <button class="knapp3" onclick="add_to_cart('The Maze Runner', 100)">Lägg till i varukorg</button>
             </article>
 
         </div>
